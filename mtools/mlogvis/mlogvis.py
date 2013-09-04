@@ -83,7 +83,7 @@ class MLogVisTool(LogFileTool):
 
         print "serving visualization on file://"+dstfilelocation
 
-        webbrowser.open("file://"+dstfilelocation)
+        # webbrowser.open("file://"+dstfilelocation)
 
 
 if __name__ == '__main__':
