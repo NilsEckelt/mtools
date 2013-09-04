@@ -77,6 +77,8 @@ class MLogVisTool(LogFileTool):
         srcfile.close()
 
         dstfile = open(dstfilelocation, 'wt')
+        replaced_contents = contents.replace('this.width = 980', 'this.width = 480')
+        replaced_contents = contents.replace('this.height = 500', 'this.height = 270')
         replaced_contents = contents.replace('##REPLACE##', outf)
         dstfile.write(replaced_contents)
         dstfile.close()
